@@ -1,0 +1,61 @@
+<?php declare(strict_types=1);
+
+use Hyva\Theme\ViewModel\Modal;
+// phpcs:disable Generic.Files.LineLength
+
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Snowdog\Hyva\Checkout\Inpost\Magewire\Locker $magewire */
+/** @var \Hyva\Theme\Model\ViewModelRegistry $viewModels */
+
+/** @var Hyva\Theme\ViewModel\Modal $modalViewModel */
+$modalViewModel = $viewModels->require(Modal::class);
+
+/** @var Hyva\Theme\ViewModel\HeroiconsOutline $heroicons */
+$heroIcons = $viewModels->require(\Hyva\Theme\ViewModel\HeroiconsOutline::class);
+?>
+<div
+    id="inpost-geowidget"
+    class="flex flex-col gap-2 mt-3"
+    x-data="snowdogHyvaCheckoutInpostInpostlockerStandardLocker"
+>
+    <?php if($magewire->locker): ?>
+        <span>
+            <?= $escaper->escapeHtml(__('Selected locker')) ?>:
+        </span>
+    <?php endif; ?>
+    <div class="flex flex-row gap-x-2 items-center">
+        <div
+            id="inpost_locker"
+            class="flex flex-col"
+        >
+            <span
+                id="inpost_locker-code"
+                class="font-semibold"
+            >
+                <?= $magewire->locker ?>
+            </span>
+            <span id="inpost_locker-address">
+                <?= nl2br($magewire->address ?? '') ?>
+            </span>
+        </div>
+    </div>
+    <button
+        class="w-fit-content btn btn-secondary"
+        @click="openInpostModal"
+        type="button"
+        aria-haspopup="dialog"
+    >
+        <?= $escaper->escapeHtml(__('Choose locker')) ?>
+    </button>
+</div>
+<script>
+<?php /** Generated with hyva-csp-helper.php */ ?>
+function snowdogHyvaCheckoutInpostInpostlockerStandardLocker() {
+    return Object.assign(
+        inpostGeowidget.call(this)
+    )
+}
+window.addEventListener('alpine:init', () => Alpine.data('snowdogHyvaCheckoutInpostInpostlockerStandardLocker', snowdogHyvaCheckoutInpostInpostlockerStandardLocker), {once: true});
+</script>
+<?php $hyvaCsp->registerInlineScript() ?>

@@ -1,0 +1,60 @@
+<?php
+use Hyva\Theme\ViewModel\HyvaCsp;
+
+/** @var HyvaCsp $hyvaCsp */
+?>
+
+<script>
+    const inpostStandardMethodCode = 'inpostlocker_standard';
+    const inpostStandardCodMethodCode = 'inpostlocker_standardcod';
+    // STANDARD
+    function inpostModal() {
+        return Object.assign(
+            hyva.modal(),
+            {
+                showInpostModal() {
+                    this.show('geowidget');
+                },
+                hideInpostModal() {
+                    this.hide('geowidget');
+                },
+            }
+        );
+    }
+    function inpostGeowidget() {
+        return {
+            openInpostModal() {
+                this.$dispatch('open-geowidget');
+            },
+        };
+    }
+    // COD
+    function inpostModalCod() {
+        return Object.assign(
+            hyva.modal(),
+            {
+                showInpostModalCod() {
+                    this.show('geowidget-cod');
+                },
+                hideInpostModalCod() {
+                    this.hide('geowidget-cod');
+                },
+            }
+        );
+    }
+    function inpostGeowidgetCod() {
+        return {
+            openInpostModalCod() {
+                this.$dispatch('open-geowidget-cod');
+            },
+        };
+    }
+    window.addEventListener('alpine:init', () => {
+        Alpine.data('inpostModal', inpostModal);
+        Alpine.data('inpostModalCod', inpostModalCod);
+        Alpine.data('inpostGeowidget', inpostGeowidget);
+        Alpine.data('inpostGeowidgetCod', inpostGeowidgetCod);
+    }, {once: true});
+
+</script>
+<?php $hyvaCsp->registerInlineScript() ?>
