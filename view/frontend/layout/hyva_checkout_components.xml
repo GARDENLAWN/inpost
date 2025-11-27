@@ -13,29 +13,29 @@
                     </argument>
                     <argument name="metadata" xsi:type="array">
                         <item name="icon" xsi:type="array">
-                            <item name="src" xsi:type="string">Snowdog_HyvaCheckoutInpost::images/InPost/InPostPaczkomat.svg</item>
+                            <item name="src" xsi:type="string">Smartmage_Inpost::images/inpost_paczkomat_logo.png</item>
                             <item name="attributes" xsi:type="array">
                                 <item name="width" xsi:type="number">120</item>
-                                <item name="alt" xsi:type="string" translate="true">Inpost Paczkomat</item>
+                                <item name="alt" xsi:type="string" translate="true">Inpost logo</item>
                             </item>
                         </item>
                     </argument>
                 </arguments>
             </block>
-            <block name="checkout.shipping.method.inpostcourier_standard"
-                   as="inpostcourier_standard"
-                   template="Snowdog_HyvaCheckoutInpost::inpostcourier_standard/courier.phtml">
+            <block name="checkout.shipping.method.inpostlocker_standardcod"
+                   as="inpostlocker_standardcod"
+                   template="Snowdog_HyvaCheckoutInpost::inpostlocker-standardcod/locker.phtml">
                 <arguments>
                     <argument name="magewire" xsi:type="object">
                         Snowdog\Hyva\Checkout\Inpost\Magewire\Locker
                     </argument>
                     <argument name="metadata" xsi:type="array">
                         <item name="icon" xsi:type="array">
-                            <item name="src" xsi:type="string">Snowdog_HyvaCheckoutInpost::images/InPost/InPostKurier.svg</item>
+                            <item name="src" xsi:type="string">Smartmage_Inpost::images/inpost_paczkomat_logo.png</item>
                             <item name="attributes" xsi:type="array">
                                 <item name="width" xsi:type="number">120</item>
                                 <item name="loading" xsi:type="string">lazy</item>
-                                <item name="alt" xsi:type="string" translate="true">Inpost Kurier</item>
+                                <item name="alt" xsi:type="string" translate="true">Inpost logo</item>
                             </item>
                         </item>
                     </argument>
@@ -55,8 +55,8 @@
                 </arguments>
             </block>
             <block
-                name="checkout.shipping.method.inpostlocker.modal.courier"
-                template="Snowdog_HyvaCheckoutInpost::inpostcourier_standard/geowidget-modal.phtml"
+                name="checkout.shipping.method.inpostlocker.modal.cod"
+                template="Snowdog_HyvaCheckoutInpost::inpostlocker-standardcod/geowidget-modal.phtml"
             >
                 <arguments>
                     <argument name="view_model" xsi:type="object">

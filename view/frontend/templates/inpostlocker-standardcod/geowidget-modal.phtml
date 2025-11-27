@@ -16,25 +16,25 @@ $viewModel = $block->getViewModel();
 $modalViewModel = $viewModels->require(Modal::class);
 $modal = $modalViewModel
     ->createModal()
-    ->withTemplate('Snowdog_HyvaCheckoutInpost::inpostcourier_standard/geowidget.phtml')
-    ->withDialogRefName('geowidget-courier')
+    ->withTemplate('Snowdog_HyvaCheckoutInpost::inpostlocker-standardcod/geowidget.phtml')
+    ->withDialogRefName('geowidget-cod')
     ->addDialogClass('relative w-full h-full pt-14 md:max-2xl md:max-h-screen-75 lg:max-w-5xl xl:max-w-7xl');
 $modalBlock = $modal->getContentRenderer();
 $modalBlock->setData('token', $viewModel->getGeoToken());
 ?>
 <div
-    x-data="snowdogHyvaCheckoutInpostInpostCourierStandardGeowidgetModal"
-    @open-geowidget-cod.window="showInpostModalCourier"
+    x-data="snowdogHyvaCheckoutInpostInpostlockerStandardcodGeowidgetModal"
+    @open-geowidget-cod.window="showInpostModalCod"
 >
     <?= $modal ?>
 </div>
 <script>
 <?php /** Generated with hyva-csp-helper.php */ ?>
-function snowdogHyvaCheckoutInpostInpostCourierStandardGeowidgetModal() {
+function snowdogHyvaCheckoutInpostInpostlockerStandardcodGeowidgetModal() {
     return Object.assign(
-        inpostModalCourier.call(this)
+        inpostModalCod.call(this)
     )
 }
-window.addEventListener('alpine:init', () => Alpine.data('snowdogHyvaCheckoutInpostInpostCourierStandardGeowidgetModal', snowdogHyvaCheckoutInpostInpostCourierStandardGeowidgetModal), {once: true});
+window.addEventListener('alpine:init', () => Alpine.data('snowdogHyvaCheckoutInpostInpostlockerStandardcodGeowidgetModal', snowdogHyvaCheckoutInpostInpostlockerStandardcodGeowidgetModal), {once: true});
 </script>
 <?php $hyvaCsp->registerInlineScript() ?>
