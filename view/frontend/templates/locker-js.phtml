@@ -6,7 +6,7 @@ use Hyva\Theme\ViewModel\HyvaCsp;
 
 <script>
     const inpostStandardMethodCode = 'inpostlocker_standard';
-    const inpostStandardCodMethodCode = 'inpostlocker_standardcod';
+    const inpostStandardCourierMethodCode = 'inpostcourier_standard';
     // STANDARD
     function inpostModal() {
         return Object.assign(
@@ -28,32 +28,32 @@ use Hyva\Theme\ViewModel\HyvaCsp;
             },
         };
     }
-    // COD
-    function inpostModalCod() {
+    // Courier
+    function inpostModalCourier() {
         return Object.assign(
             hyva.modal(),
             {
-                showInpostModalCod() {
-                    this.show('geowidget-cod');
+                showInpostModalCourier() {
+                    this.show('geowidget-courier');
                 },
-                hideInpostModalCod() {
-                    this.hide('geowidget-cod');
+                hideInpostModalCourier() {
+                    this.hide('geowidget-courier');
                 },
             }
         );
     }
-    function inpostGeowidgetCod() {
+    function inpostGeowidgetCourier() {
         return {
-            openInpostModalCod() {
-                this.$dispatch('open-geowidget-cod');
+            openInpostModalCourier() {
+                this.$dispatch('open-geowidget-courier');
             },
         };
     }
     window.addEventListener('alpine:init', () => {
         Alpine.data('inpostModal', inpostModal);
-        Alpine.data('inpostModalCod', inpostModalCod);
+        Alpine.data('inpostModalCourier', inpostModalCourier);
         Alpine.data('inpostGeowidget', inpostGeowidget);
-        Alpine.data('inpostGeowidgetCod', inpostGeowidgetCod);
+        Alpine.data('inpostGeowidgetCourier', inpostGeowidgetCourier);
     }, {once: true});
 
 </script>

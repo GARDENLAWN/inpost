@@ -16,7 +16,7 @@ class Locker extends Component implements EvaluationInterface
 {
     private const INPOST_METHOD_CODES = [
         DefaultWaySending::INPOST_LOCKER_STANDARD,
-        DefaultWaySending::INPOST_LOCKER_STANDARD_COD
+        DefaultWaySending::INPOST_LOCKER_STANDARD_COURIER
     ];
 
     public ?string $locker = null;

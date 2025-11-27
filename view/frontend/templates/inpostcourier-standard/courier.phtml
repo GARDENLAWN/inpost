@@ -21,9 +21,9 @@ $modalViewModel = $viewModels->require(Modal::class);
 $heroIcons = $viewModels->require(HeroiconsOutline::class);
 ?>
 <div
-    id="inpost-geowidget-cod"
+    id="inpost-geowidget-courier"
     class="flex flex-col gap-2 mt-3"
-    x-data="snowdogHyvaCheckoutInpostInpostlockerStandardcodLocker"
+    x-data="snowdogHyvaCheckoutInpostInpostCourierStandard"
 >
     <?php if($magewire->locker): ?>
         <span>
@@ -48,7 +48,7 @@ $heroIcons = $viewModels->require(HeroiconsOutline::class);
     </div>
     <button
         class="w-fit-content btn btn-secondary"
-        @click="openInpostModalCod"
+        @click="openInpostModalCourier"
         type="button"
         aria-haspopup="dialog"
     >
@@ -57,11 +57,11 @@ $heroIcons = $viewModels->require(HeroiconsOutline::class);
 </div>
 <script>
 <?php /** Generated with hyva-csp-helper.php */ ?>
-function snowdogHyvaCheckoutInpostInpostlockerStandardcodLocker() {
+function snowdogHyvaCheckoutInpostInpostCourierStandard() {
     return Object.assign(
-        inpostGeowidgetCod.call(this)
+        inpostGeowidgetCourier.call(this)
     )
 }
-window.addEventListener('alpine:init', () => Alpine.data('snowdogHyvaCheckoutInpostInpostlockerStandardcodLocker', snowdogHyvaCheckoutInpostInpostlockerStandardcodLocker), {once: true});
+window.addEventListener('alpine:init', () => Alpine.data('snowdogHyvaCheckoutInpostInpostCourierStandard', snowdogHyvaCheckoutInpostInpostCourierStandard), {once: true});
 </script>
 <?php $hyvaCsp->registerInlineScript() ?>
