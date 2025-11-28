@@ -13,9 +13,12 @@
                     </argument>
                     <argument name="metadata" xsi:type="array">
                         <item name="icon" xsi:type="array">
-                            <item name="src" xsi:type="string">Snowdog_HyvaCheckoutInpost::images/locker-mobile.svg</item>
+                            <item name="src" xsi:type="string">Snowdog_HyvaCheckoutInpost::images/locker.svg</item>
                             <item name="attributes" xsi:type="array">
                                 <item name="alt" xsi:type="string" translate="true">Inpost locker</item>
+                                <item name="src-mobile" xsi:type="string">
+                                    Snowdog_HyvaCheckoutInpost::images/locker-mobile.svg
+                                </item>
                             </item>
                         </item>
                     </argument>
@@ -30,10 +33,13 @@
                     </argument>
                     <argument name="metadata" xsi:type="array">
                         <item name="icon" xsi:type="array">
-                            <item name="src" xsi:type="string">Snowdog_HyvaCheckoutInpost::images/locker-mobile.svg</item>
+                            <item name="src" xsi:type="string">Snowdog_HyvaCheckoutInpost::images/locker.svg</item>
                             <item name="attributes" xsi:type="array">
                                 <item name="loading" xsi:type="string">lazy</item>
                                 <item name="alt" xsi:type="string" translate="true">Inpost locker</item>
+                                <item name="src-mobile" xsi:type="string">
+                                    Snowdog_HyvaCheckoutInpost::images/locker-mobile.svg
+                                </item>
                             </item>
                         </item>
                     </argument>
@@ -44,9 +50,12 @@
                 <arguments>
                     <argument name="metadata" xsi:type="array">
                         <item name="icon" xsi:type="array">
-                            <item name="src" xsi:type="string">Snowdog_HyvaCheckoutInpost::images/courier-mobile.svg</item>
+                            <item name="src" xsi:type="string">Snowdog_HyvaCheckoutInpost::images/courier.svg</item>
                             <item name="attributes" xsi:type="array">
                                 <item name="alt" xsi:type="string" translate="true">Inpost courier</item>
+                                <item name="src-mobile" xsi:type="string">
+                                    Snowdog_HyvaCheckoutInpost::images/courier-mobile.svg
+                                </item>
                             </item>
                         </item>
                     </argument>
@@ -57,10 +66,13 @@
                 <arguments>
                     <argument name="metadata" xsi:type="array">
                         <item name="icon" xsi:type="array">
-                            <item name="src" xsi:type="string">Snowdog_HyvaCheckoutInpost::images/courier-mobile.svg</item>
+                            <item name="src" xsi:type="string">Snowdog_HyvaCheckoutInpost::images/courier.svg</item>
                             <item name="attributes" xsi:type="array">
                                 <item name="loading" xsi:type="string">lazy</item>
                                 <item name="alt" xsi:type="string" translate="true">Inpost courier</item>
+                                <item name="src-mobile" xsi:type="string">
+                                    Snowdog_HyvaCheckoutInpost::images/courier-mobile.svg
+                                </item>
                             </item>
                         </item>
                     </argument>
