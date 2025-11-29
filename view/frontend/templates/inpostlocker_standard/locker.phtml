@@ -1,13 +1,18 @@
 <?php declare(strict_types=1);
 
+use Hyva\Theme\Model\ViewModelRegistry;
+use Hyva\Theme\ViewModel\HyvaCsp;
 use Hyva\Theme\ViewModel\Modal;
+use Magento\Framework\View\Element\Template;
+use Snowdog\Hyva\Checkout\Inpost\Magewire\Locker;
+
 // phpcs:disable Generic.Files.LineLength
 
 /** @var \Magento\Framework\Escaper $escaper */
-/** @var \Magento\Framework\View\Element\Template $block */
-/** @var \Snowdog\Hyva\Checkout\Inpost\Magewire\Locker $magewire */
-/** @var \Hyva\Theme\Model\ViewModelRegistry $viewModels */
-
+/** @var Template $block */
+/** @var Locker $magewire */
+/** @var ViewModelRegistry $viewModels */
+/** @var HyvaCsp $hyvaCsp */
 /** @var Hyva\Theme\ViewModel\Modal $modalViewModel */
 $modalViewModel = $viewModels->require(Modal::class);
 

@@ -2,6 +2,7 @@
 
 use Hyva\Theme\Model\ViewModelRegistry;
 use Hyva\Theme\ViewModel\HeroiconsOutline;
+use Hyva\Theme\ViewModel\HyvaCsp;
 use Hyva\Theme\ViewModel\Modal;
 use Magento\Framework\Escaper;
 use Magento\Framework\View\Element\Template;
@@ -13,7 +14,7 @@ use Snowdog\Hyva\Checkout\Inpost\Magewire\Locker;
 /** @var Template $block */
 /** @var Locker $magewire */
 /** @var ViewModelRegistry $viewModels */
-
+/** @var HyvaCsp $hyvaCsp */
 /** @var Hyva\Theme\ViewModel\Modal $modalViewModel */
 $modalViewModel = $viewModels->require(Modal::class);
 
