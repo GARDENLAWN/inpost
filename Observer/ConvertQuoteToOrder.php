@@ -1,6 +1,6 @@
 <?php
 
-namespace Snowdog\Hyva\Checkout\Inpost\Observer;
+namespace Snowdog\HyvaCheckoutInpost\Observer;
 
 use Magento\Checkout\Model\Session;
 use Magento\Framework\Event\Observer;

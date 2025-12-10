@@ -1,6 +1,6 @@
 <?php
 
-namespace Snowdog\Hyva\Checkout\Inpost\Magewire;
+namespace Snowdog\HyvaCheckoutInpost\Magewire;
 
 use Hyva\Checkout\Model\Magewire\Component\EvaluationInterface;
 use Hyva\Checkout\Model\Magewire\Component\EvaluationResultFactory;

@@ -12,7 +12,7 @@
         >
             <arguments>
                 <argument name="view_model" xsi:type="object">
-                    Snowdog\Hyva\Checkout\Inpost\Magewire\Locker
+                    Snowdog\HyvaCheckoutInpost\Magewire\Locker
                 </argument>
             </arguments>
         </block>

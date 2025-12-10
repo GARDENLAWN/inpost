@@ -1,6 +1,6 @@
 <?php
 
-namespace Snowdog\Hyva\Checkout\Inpost\Plugin;
+namespace Snowdog\HyvaCheckoutInpost\Plugin;
 
 use Hyva\Checkout\Model\Magewire\Payment\PlaceOrderServiceInterface;
 use Magento\Quote\Model\Quote;
